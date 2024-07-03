@@ -1,0 +1,264 @@
+{% load static%}
+{% load bootstrap5%}
+
+<!DOCTYPE html>
+
+<html lang="es">       
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% bootstrap_css%}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="icon" href="{% static 'img/logo_nicolas.png' %}" type="image/x-icon">
+    <title>Portafolio Nicolas</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Nicolás</h1>
+                    </div>
+                    <nav id="nav" class=""">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#projects">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+
+                        <a href="https://cl.linkedin.com/in/nicolas-cardenas-llancaman" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@nicolasfarid?si=afEyQoWYpe65UM0X" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/nicolas.cardenasllancaman/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Desarrollador Fullstack</h2>
+                        <p>Soy Nicolás, un programador apasionado con experiencia en desarrollo web y software. Especializado en HTML, CSS y JavaScript. Siempre buscando nuevos desafíos y oportunidades para crecer profesionalmente.</p>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="{% static 'img/foto-inicio.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño Web</h3>
+                    <p>Utilizo HTML, CSS y JavaScript para crear sitios web responsivos y atractivos, enfocándome en interfaces intuitivas y accesibles. Siempre en busca de nuevas tecnologías para mejorar mis proyectos y ofrecer soluciones innovadoras.</p>
+
+                  
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+                    <h3>Base de datos</h3>
+                    <p>Desarrollador especializado en gestión y diseño de bases de datos. Con experiencia en SQL yMySQL, optimizo y mantengo bases de datos robustas y eficientes. Me apasiona asegurar la integridad y seguridad de los datos.</p>
+
+                    
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                    </div>
+                    <h3>Aplicaciones móviles</h3>
+                    <p> Desarrollador especializado en aplicaciones móviles. Con experiencia en Flutter y React Native, creo aplicaciones intuitivas y eficientes para Android e iOS. Me apasiona desarrollar soluciones innovadoras que mejoren la experiencia del usuario..</p>
+
+
+    </section>
+
+    <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="80">
+                                80%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="75">
+                                75%
+                            </div>
+                            <h2>BOOSTRAP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>SQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>JAVA</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>PHOTOSHOP</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- Proyects Section -->
+
+ <section id="projects" class="py-5" >
+    <div class="container">
+        <h2 class="text-center">Mis proyectos</h2>
+        <div class="row">
+            {% for proyecto in proyectos %}
+            <div class="col-md-4">
+                <div class="card-md-4">
+                    <img src="{{ proyecto.imagen.url}}" class="card-img-top" alt="{{ proyecto.titulo }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ proyecto.titulo }}</h5>
+                        <p class="card-text">{{ proyecto.descripcion }}</p>
+                        <a href="{{ proyecto.link_repositorio }}" class="btn btn-secundary" target="_blank">View Repo</a>
+                        <a href="{% url 'proyecto_detalle' proyecto.pk %}" class="btn btn-info" target="_blank">Ver Detalle</a> <!-- Nuevo botón -->
+
+
+                    </div>               
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+
+<section id="contacto" class="py-5 bg-light">
+
+    <div class="container">
+
+      <h2 class="text-center">Contacto</h2>
+
+      <form method="POST" action="{% url 'contacto_nuevo' %}" id="" class="needs-validation" novalidate>
+
+        {% csrf_token %}
+
+        <div class="mb-3">
+
+          <label for="name" class="form-label">Nombre</label>
+
+          <input name="nombre" type="text" class="form-control" id="name" required>
+
+          <div class="invalid-feedback">Please enter your name.</div>
+
+        </div>
+
+        <div class="mb-3">
+
+          <label for="email" class="form-label">Email</label>
+
+          <input type="email" class="form-control" id="email" name="email" required>
+
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+
+        </div>
+
+        <div class="mb-3">
+
+          <label for="message" class="form-label">Mensaje</label>
+
+          <textarea class="form-control" id="message" rows="3" name="mensaje" required></textarea>
+
+          <div class="invalid-feedback">Please enter your message.</div>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+      </form>
+
+    </div>
+
+  </section>
+   
+
+    <footer>
+        <p>Creado por Nicolás Cárdenas - 2024 </p>
+    </footer>
+
+    {% bootstrap_javascript %}
+    <script src="{% static 'funcion.js' %}"></script>
+    
+</body>
+</html>
